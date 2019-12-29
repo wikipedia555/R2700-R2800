@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backGround">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:id="@+id/mute"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/mutebutton"/>
+        <ImageButton
+            android:id="@+id/volume_plus"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/vol_plus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            />
+        <ImageButton
+            android:id="@+id/volume_minus"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/vol_minus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="315dp"
+            />
+        <ImageButton
+            android:id="@+id/auxpc"
+            android:layout_width="50dp"
+            android:layout_height="150dp"
+            android:background="@drawable/pc_aux1"
+            android:layout_toLeftOf="@id/mute"
+            android:layout_marginTop="175dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <ImageButton
+            android:id="@+id/optcoaxial"
+            android:layout_width="50dp"
+            android:layout_height="150dp"
+            android:background="@drawable/opt_cox"
+            android:layout_toRightOf="@id/mute"
+            android:layout_marginTop="175dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="A Passion for Sound"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="EDIFIER"
+            android:fontFamily="sans-serif"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:layout_above="@id/text"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
